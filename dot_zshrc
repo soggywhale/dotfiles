@@ -1,0 +1,59 @@
+
+# load plugin manager
+
+if [[ ! -f ~/.zpm/zpm.zsh ]]; then
+  git clone --recursive https://github.com/zpm-zsh/zpm ~/.zpm
+fi
+source ~/.zpm/zpm.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+
+# load plugins
+zpm load zsh-users/zsh-autosuggestions
+zpm load zsh-users/zsh-completions
+zpm load zsh-users/zsh-history-substring-search
+
+# exports and variables
+export PATH=~/.local/bin:~/scripts:~/.config/hypr/scripts:$PATH
+export EDITOR=nvim
+export VISUAL=nvim
+
+# key bindings
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -e
+
+# aliases
+alias cat="bat"
+alias ls="lsd"
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
+alias s="kitty +kitten ssh"
+alias whale="ssh whale@192.168.1.102"
+
+# function
+vimwiki () {
+    if [[ $# == 0 ]]
+    then
+        nvim +'VimwikiIndex'
+    elif [[ $1 == 'git' ]]
+    then
+        git -C ~/Diary/ ${@:2}
+    else
+        echo 'Usage: vimwiki [git] [args ...]'
+    fi
+}
+
+# some settings
+HISTFILE=~/.histfile
+HISTSIZE=50000
+SAVEHIST=10000
+setopt extendedglob nomatch
+unsetopt autocd beep
+
+autoload -Uz compinit
+compinit
+# starship prompt
+eval "$(starship init zsh)"

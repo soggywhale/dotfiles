@@ -1,0 +1,38 @@
+$cerulean: #226787;
+$arylide-yellow: #E9CB5B;
+$dark-cyan: #2F8D96;
+$cerulean-2: #086480;
+$lapis-lazuli: #023546;
+$columbia-blue: #BDD4F1;
+
+*{
+  all:unset;
+  font-family: 'JetBrains Mono Nerd Font';
+  color: $columbia-blue;
+  font-size:17px;
+}
+
+.bar {
+	background-color: transparent;
+}
+
+.main-container {
+  padding:6px 12px;
+  background-color: $lapis-lazuli;
+  border-radius: 12px;
+  margin: 3px 3px 0 3px;
+}
+
+.workspaces {
+  margin-left: -6px;
+  padding-left:0px;
+}
+
+
+.time {
+  background: transparent;
+}
+
+.systray{
+  padding-right:8px;
+}
