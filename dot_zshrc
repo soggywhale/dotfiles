@@ -6,6 +6,7 @@ if [[ ! -f ~/.zpm/zpm.zsh ]]; then
 fi
 source ~/.zpm/zpm.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+source ~/.zsh/completion/chezmoi.zsh
 
 # load plugins
 zpm load zsh-users/zsh-autosuggestions
@@ -16,6 +17,7 @@ zpm load zsh-users/zsh-history-substring-search
 export PATH=~/.local/bin:~/scripts:~/.config/hypr/scripts:$PATH
 export EDITOR=nvim
 export VISUAL=nvim
+export OPENAI_API_KEY=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
 
 # key bindings
 bindkey '^[[A' history-substring-search-up
@@ -52,6 +54,9 @@ HISTSIZE=50000
 SAVEHIST=10000
 setopt extendedglob nomatch
 unsetopt autocd beep
+
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
 
 autoload -Uz compinit
 compinit

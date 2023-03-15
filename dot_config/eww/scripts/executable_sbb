@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+export IFS=$'\n'
+SBB_URL=$(curl -s -X GET "http://transport.opendata.ch/v1/connections?to=Pully&from=Blessoney" | \
+    jq -r '.connections[0] | "\(.from.departureTimestamp),\(.to.arrivalTimestamp)"')
+
+printf " %(%H:%M)T %(%H:%M)T\n" "${SBB_URL%%,*}" "${SBB_URL##*,}"

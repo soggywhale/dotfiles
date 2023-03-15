@@ -1,0 +1,5 @@
+(defwidget sbb-module []
+  (button
+    :class "sbb"
+    :style "color: ${net.color};"
+    {sbb}))

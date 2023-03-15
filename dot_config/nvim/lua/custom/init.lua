@@ -8,7 +8,7 @@ vim.cmd([[
 ]])
 
 vim.cmd([[
-  let g:vimwiki_list = [{'path': '~/vimwiki/',
+  let g:vimwiki_list = [{'path': '~/Whalethoughts/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
   set clipboard+=unnamedplus
 ]])

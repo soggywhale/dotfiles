@@ -32,7 +32,7 @@ disabled = false
 style = "fg:#edeff0 bg:#232526"
 
 [directory]
-format = "[](fg:#232526 bg:none)[$path]($style)[](fg:#232526 bg:#232526)[](fg:#6791c9 bg:#232526)[](fg:#232526 bg:#6791c9)[](fg:#6791c9 bg:none)"
+format = "[](fg:#6791c9 bg:none)[](fg:#232526 bg:#6791c9)[](fg:#6791c9 bg:#232526)[](fg:#232526 bg:#232526)[$path]($style)[](fg:#232526 bg:none)"
 style = "fg:#edeff0 bg:#232526"
 truncation_length = 3
 truncate_to_repo=false
