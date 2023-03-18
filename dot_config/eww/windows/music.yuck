@@ -4,7 +4,7 @@
     :space-evenly false
     :style "background-color: ${music.color1}; border: 1px solid ${music.color2};"
     (box
-      :class "music-cover-art"
+  :class "music-cover-art"
       :style "background-image: url(\"${music.cover}\");")
     (box
       :orientation "v"
@@ -45,7 +45,7 @@
 (defwindow music
   :stacking "fg"
   :focusable false
-  :monitor 1
+  :monitor 0
   :geometry (geometry
     :x "0%"
     :y "0%"

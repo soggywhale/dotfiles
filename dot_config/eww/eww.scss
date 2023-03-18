@@ -25,9 +25,8 @@
 @import 'css/volume';
 
 .bar {
-  background-color: $bg;
+  
   color: $fg;
-
   label {
     font-size: 1.2rem;
   }
@@ -78,3 +77,18 @@ scale trough {
 }
 
 .workspaces { margin-left: 10px; }
+
+.center {
+  background-color: $base;
+  @include rounding;
+}
+
+.left {
+  background-color: $base;
+  @include rounding;
+}
+
+.right {
+  background-color: $base;
+  @include rounding;
+}

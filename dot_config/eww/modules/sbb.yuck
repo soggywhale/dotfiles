@@ -2,4 +2,5 @@
   (button
     :class "sbb"
     :style "color: ${net.color};"
+    :onrightclick ""
     {sbb}))

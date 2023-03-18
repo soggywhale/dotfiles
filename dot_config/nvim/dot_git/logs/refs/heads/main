@@ -1,2 +1,3 @@
 0000000000000000000000000000000000000000 03711011210f5177286f69783d8732a6e0564424 adri <adri@cumcrys.(none)> 1677917764 +0100	clone: from https://github.com/NvChad/NvChad
 03711011210f5177286f69783d8732a6e0564424 8cf7ca4002ca0944aae58e22c060ff314a706d83 soggywhale <soggywhale@proton.me> 1678411925 +0100	pull --set-upstream https://github.com/NvChad/NvChad main --rebase: Fast-forward
+8cf7ca4002ca0944aae58e22c060ff314a706d83 b2cc8884e1c62a7e6c40454226090fae1fdd6fe1 soggywhale <soggywhale@proton.me> 1678909287 +0100	pull --set-upstream https://github.com/NvChad/NvChad main --rebase: Fast-forward
